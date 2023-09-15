@@ -1,0 +1,105 @@
+.hero_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #224722;
+    padding: 16px;
+    gap: 7em;
+    .hero_textDiv{
+        width:50%;
+        text-align: center ;  
+        margin-top: 4%;  
+        h1{
+            width: 100%;
+            font-size: 7rem;
+            line-height: 100px;
+            font-weight: 900;
+        }
+        p{
+            margin-top: -50px;
+           width: 100%;
+           font-size: 1.4rem;
+           line-height: 1.75rem;
+           }
+           img{
+            width: 26%;
+            height: 26%;
+        }
+    }
+    
+}
+@media (min-width: 768px) and (max-width:1183px) {
+    body{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .hero_section{
+        display: flex;
+        width: 100%;
+        flex-direction:column ;
+        text-align: center;
+        align-items: center;
+        padding: 0px;
+        .hero_textDiv{
+            width: 100%;
+        }
+    
+        h1{
+            width: 100%;
+            font-size: 50px;
+        }
+        p{
+            width: 100%;
+        }
+        img{
+            width: 50%;
+        height: 50%;
+        }
+    }
+    
+    
+    }
+
+    
+  @media screen and (max-width: 766px) {
+    body{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .hero_section{
+        display: flex;
+        width: 100%;
+        flex-direction:column ;
+        text-align: center;
+        align-items: center;
+        padding: 0px;
+        .hero_textDiv{
+            width: 100%;
+        }
+        .hero_textDiv{
+
+            h1{
+                width: 100%;
+                line-height: 60px;
+                font-size: 3rem;
+            }
+            p{
+                width: 100%;
+                margin-top: 10px;
+            }
+            img{
+                display: none;
+            }
+        }
+        img{
+            margin-top: -2rem;
+            width: 60%;
+        }
+        }
+    
+
+  }

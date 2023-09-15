@@ -1,0 +1,78 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    color: #224722;
+  
+    h1 {
+      cursor: default;
+    }
+  
+    a {
+      margin: 30px;
+      color: #224722;
+      text-decoration: none;
+    }
+  
+    .link_github {
+      cursor: pointer;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .link_get {
+      padding: 0.5rem;
+      border-radius: 9999px;
+      border: 1px solid #224722;
+      cursor: pointer;
+  
+      &:hover {
+        color: #e7edde;
+        background-color: #224722;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width:1023px){
+    header{
+      text-align: center;
+      border: 1px solid red;
+      width: 100%;
+      *{
+        border: 1px solid red;
+      }
+      h1{
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    header{
+        text-align: center;
+        border: 1px solid red;
+        width: max-content;
+        width: 100%;
+        *{
+          border: 1px solid red;
+        }
+        h1{
+          font-size: 20px;
+        }
+        a {
+            margin: 30px;
+            color: #224722;
+            text-decoration: none;
+            font-size: 10px;
+          }
+      }
+
+  }
