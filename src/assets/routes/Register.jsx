@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom'
 
 function Register(){
     return (
-        <section className="container">
+        <section className='FormRegister'> 
+        <div className="container">
             <Link to='/'>
             <img src={BackIcon} alt="" />
             </Link>
@@ -15,6 +16,7 @@ function Register(){
 
             <ClienteForm/>
             </div>
+        </div>
         </section>
 
     )
