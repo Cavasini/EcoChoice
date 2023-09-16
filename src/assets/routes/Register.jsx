@@ -10,6 +10,7 @@ function Register(){
     return (
         <section className='FormRegister'> 
         <div className="container">
+            <S.Title1>Cadastre-se para adquirir o Eco Choice app</S.Title1>
             <Link to='/'>
             <img src={BackIcon} alt="" />
             </Link>

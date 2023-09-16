@@ -20,7 +20,7 @@ margin: 0 auto 100px;
 `
 
 export const Button = styled.button`
-background-color: #007bff;
+background-color: #05340D;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -29,10 +29,13 @@ transition: background-color 0.3s ease;
 width: 100%;
 border: 0;
 padding: 10px;
+
+&:hover{
+    background-color: #09270e;
+}
 `
 
-export const Parag = styled.p`
-margin-top: -2rem;
-font-size: 1.5rem;
+export const Title1 = styled.h1`
 color: #224722;
+margin:20px;
 `
