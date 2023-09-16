@@ -1,4 +1,6 @@
 import {} from "react";
+import AppStore from '/app-store-footer.svg'
+import GooglePlay from '/google-play-footer.svg'
 
 const Footer = () => {
   return (
@@ -7,8 +9,8 @@ const Footer = () => {
         <div className="footer_section01">
           <h1>Eco Choise</h1>
           <div>
-          <img src="app-store-footer.svg" alt="" />
-          <img src="google-play-footer.svg" alt="" />
+          <img src={AppStore} alt="" />
+          <img src={GooglePlay} alt="" />
           </div>
         </div>
         <div className="footer_section02">

@@ -1,10 +1,16 @@
 import {} from "react";
 
+import mockupHome from '/mockupHome.svg'
+import mockupNotficacoes from '/mockupNotifica.svg'
+import mockupFavoritos from '/mockupFav.svg'
+
+import * as S from './styles'
+
 const About = () => {
   return (
     <section className="grid-container">
       <div className="section">
-          <img src="Home (3).svg" alt=""/>
+          <img src={mockupHome} alt=""/>
         <div className="section-content">
           <h3>Conectividade Ecológica</h3>
           <p>
@@ -18,7 +24,7 @@ const About = () => {
         </div>
       </div>
       <div className="section">
-          <img src="Frame 5.svg" alt=""/>
+          <img src={mockupNotficacoes} alt=""/>
         <div className="section-content">
           <h3>Eficiência Energética Avançada</h3>
           <p>
@@ -32,7 +38,7 @@ const About = () => {
         </div>
       </div>
       <div className="section">
-          <img src="favoritos.svg" alt=""/>
+          <img src={mockupFavoritos} alt=""/>
         <div className="section-content">
           <h3>A Revolução Sustentável</h3>
           <p>

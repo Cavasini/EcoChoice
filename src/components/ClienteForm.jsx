@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import * as S from './styles'
 
 const generateUniqueKey = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -41,15 +42,13 @@ const ClienteForm = () => {
     sessionStorage.setItem(newKey, JSON.stringify(dataToSave));
 
     alert(`Seja bem vindo ${formData.name}`);
-    formData.name = "";
-    formData.email = "";
   };
 
   return (
     <form action="#">
       <div className="form-group">
-        <label for="nome">Nome:</label>
-        <input
+        <S.Input
+        placeholder="Name"
           type="text"
           name="name"
           value={formData.name || ""}
@@ -57,17 +56,17 @@ const ClienteForm = () => {
         />
       </div>
       <div className="form-group">
-        <label for="email">Email:</label>
-        <input
+        <S.Input
+        placeholder="Email"
           type="text"
           name="email"
           value={formData.email || ""}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
       </div>
-      <button type="submit" onClick={handleSubmit}>
+      <S.Button type="submit" onClick={handleSubmit}>
         Enviar
-      </button>
+      </S.Button>
     </form>
     // <div>
     //   <input

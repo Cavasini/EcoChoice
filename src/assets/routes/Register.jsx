@@ -3,6 +3,7 @@ import ClienteForm from '../../components/ClienteForm'
 import '../styles/form.scss'
 import BackIcon from '/back.svg'
 import { Link } from 'react-router-dom'
+import * as S from '../../components/styles'
 
 
 function Register(){
@@ -12,10 +13,9 @@ function Register(){
             <Link to='/'>
             <img src={BackIcon} alt="" />
             </Link>
-            <div className="card">
-
+            <S.Card className="card">
             <ClienteForm/>
-            </div>
+            </S.Card>
         </div>
         </section>
 

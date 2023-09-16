@@ -1,5 +1,7 @@
 import {} from "react";
-
+import AppStore from '/app-store-dark.svg'
+import GooglePlay from '/google-play-dark.svg'
+import HeroImage from '/Hero.svg'
 
 const Hero = () => {
   return (
@@ -10,11 +12,11 @@ const Hero = () => {
         Descubra como nossa inovação Bluetooth Low Energy está transformando a ecologia, conectando tecnologia e preservação ambiental para um futuro sustentável.
         </p>
       <div className="hero_storeApp">
-      <img src="app-store-dark.svg" alt="" />
-      <img src="google-play-dark.svg" alt="" />
+      <img src={AppStore} alt="" />
+      <img src={GooglePlay} alt="" />
       </div>
       </div>
-      <img src="Frame 6.svg" alt="" />
+      <img src={HeroImage} alt="" />
 
     </section>
   );
