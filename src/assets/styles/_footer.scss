@@ -125,4 +125,44 @@ footer {
 
     }
 }
+@media screen and (max-width: 766px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+        
+        section {
+            width: 88%;
+            align-items: center;
+            grid-template-columns:1fr;
+            min-height: 0px;
+            .footer_section01{
+                div{
+                    justify-content: center;
+                }
+            }
+            .footer_section02 {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                .ul_main{
+                    gap: 1rem;
+                }
+    
+                li {
+                    display: none;
+                }
+
+            }
+        }
+
+    }
+  }
 

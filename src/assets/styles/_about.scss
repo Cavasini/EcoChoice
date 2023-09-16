@@ -17,23 +17,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-        .rightImage{
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            width: 60%;
-            
 
-        };
-        .leftImage{
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-        }
+    img{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+
+    }
     }
 
 
@@ -106,4 +98,27 @@
     }
   
   
+  }
+
+  @media screen and (max-width: 766px) {
+
+    .section{
+        width: 90%;
+    }
+    .section-content{
+        h3{
+            font-size:  2em ;
+        }
+        p {
+            font-size: 0.6rem;
+            color: #224722;
+        }
+
+        .downloadButtom_div {
+
+            a {
+                padding: 10px;
+            }
+        }
+    }
   }

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="grid-container">
       <div className="section">
-          <img src="Vectary texture (2).png" alt="" className="leftImage"/>
+          <img src="Home (3).svg" alt=""/>
         <div className="section-content">
           <h3>Conectividade Ecológica</h3>
           <p>
@@ -18,7 +18,7 @@ const About = () => {
         </div>
       </div>
       <div className="section">
-          <img src="Vectary texture (1).png" alt="" className="rightImage"/>
+          <img src="Frame 5.svg" alt=""/>
         <div className="section-content">
           <h3>Eficiência Energética Avançada</h3>
           <p>
@@ -32,7 +32,7 @@ const About = () => {
         </div>
       </div>
       <div className="section">
-          <img src="Vectary texture (2).png" alt="" className="leftImage"/>
+          <img src="favoritos.svg" alt=""/>
         <div className="section-content">
           <h3>A Revolução Sustentável</h3>
           <p>

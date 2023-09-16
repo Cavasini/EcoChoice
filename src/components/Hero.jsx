@@ -14,7 +14,7 @@ const Hero = () => {
       <img src="google-play-dark.svg" alt="" />
       </div>
       </div>
-      <img src="mockup.png" alt="" />
+      <img src="Frame 6.svg" alt="" />
 
     </section>
   );
