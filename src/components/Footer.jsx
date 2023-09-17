@@ -42,7 +42,7 @@ const Footer = () => {
             </li>
           </ul>
           <p>
-            @2023 Eco Choise. All rights reserved
+            @2023 Eco Choice. All rights reserved
           </p>
         </div>
       </section>
