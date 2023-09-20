@@ -68,21 +68,6 @@ const ClienteForm = () => {
         Enviar
       </S.Button>
     </form>
-    // <div>
-    //   <input
-    //     type="text"
-    //     name="name"
-    //     value={formData.name || ''}
-    //     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-    //   />
-    //   <input
-    //     type="text"
-    //     name="email"
-    //     value={formData.email || ''}
-    //     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-    //   />
-    //   <button onClick={handleSubmit}>Salvar</button>
-    // </div>
   );
 };
 
