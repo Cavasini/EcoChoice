@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as S from './styles'
+import {Input, Button } from "./styles";
 
 const generateUniqueKey = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -47,8 +47,8 @@ const ClienteForm = () => {
   return (
     <form action="#">
       <div className="form-group">
-        <S.Input
-        placeholder="Name"
+        <Input
+          placeholder="Name"
           type="text"
           name="name"
           value={formData.name || ""}
@@ -56,17 +56,17 @@ const ClienteForm = () => {
         />
       </div>
       <div className="form-group">
-        <S.Input
-        placeholder="Email"
+        <Input
+          placeholder="Email"
           type="text"
           name="email"
           value={formData.email || ""}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
       </div>
-      <S.Button type="submit" onClick={handleSubmit}>
+      <Button type="submit" onClick={handleSubmit}>
         Enviar
-      </S.Button>
+      </Button>
     </form>
   );
 };

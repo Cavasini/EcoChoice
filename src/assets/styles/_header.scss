@@ -1,70 +1,116 @@
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  .headerSection {
     display: flex;
+    max-width: 1140px;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
     align-items: center;
-    margin-top: -10px;
-    color: #224722;
-  
-    h1 {
-      cursor: default;
+
+    .LogoDiv {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 75%;
+      }
     }
-  
-    a {
-      margin: 30px;
-      color: #224722;
-      text-decoration: none;
+
+    .PagesDiv {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        box-sizing: border-box;
+        list-style: none;
+        font-size: 15px;
+        font-weight: 600;
+        gap: 5%;
+
+        li {
+          cursor: pointer;
+        }
+      }
     }
-  
+
+    .ButtonDiv {
+      width: 20%;
+      a {
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        color: white;
+        justify-content: center;
+        button {
+          width: 45%;
+          padding: 14px 10px;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+
     .link_github {
       cursor: pointer;
-  
+
       &:hover {
         text-decoration: underline;
       }
     }
-  
+
     .link_get {
       padding: 0.5rem;
       border-radius: 9999px;
       border: 1px solid #224722;
       cursor: pointer;
-  
+
       &:hover {
         color: #e7edde;
         background-color: #224722;
-        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-        transition-duration: .15s;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
       }
     }
   }
-  
-  @media screen and (min-width: 768px) and (max-width:1023px){
-    header{
-      text-align: center;
-      width: 100%;
-      h1{
-        font-size: 30px;
-      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    text-align: center;
+    width: 100%;
+    h1 {
+      font-size: 30px;
     }
   }
+}
 
-  @media screen and (max-width: 766px) {
-    header{
-        text-align: center;
-        width: max-content;
-        width: 100%;
-        h1{
-          font-size: 20px;
-        }
-        a {
-            margin: 30px;
-            color: #224722;
-            text-decoration: none;
-            font-size: 10px;
-          }
-      }
-
+@media screen and (max-width: 766px) {
+  header {
+    text-align: center;
+    width: max-content;
+    width: 100%;
+    h1 {
+      font-size: 20px;
+    }
+    a {
+      margin: 30px;
+      color: #224722;
+      text-decoration: none;
+      font-size: 10px;
+    }
   }
+}

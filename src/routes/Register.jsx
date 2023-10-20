@@ -1,9 +1,8 @@
 import {} from 'react'
-import ClienteForm from '../../components/ClienteForm'
-import '../styles/form.scss'
+import ClienteForm from "../components/ClienteForm"
 import BackIcon from '/back.svg'
 import { Link } from 'react-router-dom'
-import * as S from '../../components/styles'
+import * as S from '../components/styles'
 
 
 function Register(){
