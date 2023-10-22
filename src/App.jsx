@@ -8,12 +8,13 @@ import Features from './components/Features'
 
 function App() {
 
+
   return (
     <>
-        <Header/>
-        <Hero/>
-        <Features/>
-         <About/>
+        <Header sectionIds={['Home', 'Features', 'About']}/>
+        <Hero id="Home"/>
+        <Features id="Features"/>
+         <About id="About"/>
         <Footer/> 
     </>
   )

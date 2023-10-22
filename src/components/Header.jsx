@@ -4,7 +4,15 @@ import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ sectionIds }) => {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const styleDeafult = {
     backgroundColor: "transparent",
     color: "white",
@@ -44,13 +52,15 @@ const Header = () => {
           </div>
           <div className="PagesDiv">
             <ul>
-              <li>Home</li>
-              <li>Features</li>
-              <li>Overview</li>
-              <li>pricing</li>
-              <li>team</li>
-              <li>blog</li>
-              <li>contact</li>
+              {sectionIds.map((sectionId) => (
+                <li key={sectionId}>
+                    <a
+                      style={{ color: HeaderStyle.color }}
+                    >
+                      {sectionId}
+                    </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="ButtonDiv">

@@ -11,39 +11,39 @@ import {
 export const Features = () => {
   const cardsData = [
     {
-      title: "Eco Desperta",
+      title: "Alimentação Consciente",
       content:
-        "O aplicativo Eco Despertar é sua ferramenta diária para escolhas mais sustentáveis. Comece hoje a acordar para um mundo mais verde!",
+        "Recomendações e dicas para escolhas de alimentos sustentáveis.",
       img: <FiClock style={{ color: "white" }} />,
     },
     {
-      title: "Eco Jornada",
+      title: "Consumo Responsável",
       content:
-        " Participe da Eco Jornada e descubra maneiras simples de tornar sua rotina diária mais ecológica. Siga o caminho da sustentabilidade!",
+        "Guias sobre como fazer compras de forma ecologicamente correta.",
       img: <FiMap style={{ color: "white" }} />,
     },
     {
-      title: "Vida Verde",
+      title: "Dicas Diárias",
       content:
-        "Com o Vida Verde, sua jornada em direção a um estilo de vida mais sustentável fica mais fácil. Faça escolhas verdes a cada passo!",
+        "Sugestões práticas para incorporar a sustentabilidade no dia a dia.",
       img: <FiSlack style={{ color: "white" }} />,
     },
     {
-      title: "Consciente Eco",
+      title: "Educação Verde",
       content:
-        "O Consciente Eco é o seu companheiro na conscientização e na implementação de práticas sustentáveis. Seja parte da mudança",
+        "Conteúdo educativo para aumentar a conscientização ambiental.",
       img: <FiRefreshCcw style={{ color: "white" }} />,
     },
     {
-      title: "Sustent App",
+      title: "Futuro Sustentável",
       content:
-        "Sustent App é o aplicativo essencial para tornar suas escolhas cotidianas amigáveis ao meio ambiente. Comece a sustentabilidade na palma da sua mão!",
+        "Planos de expansão e visão a longo prazo do EcoChoice.",
       img: <FiSmartphone style={{ color: "white" }} />,
     },
     {
-      title: "Verde Certo",
+      title: "Comunidade Engajada",
       content:
-        "Com o Verde Certo, você está no caminho certo para um estilo de vida mais ecológico. Faça a escolha certa, faça a escolha verde!",
+        "Conexão com outros apoiadores do projeto e ação coletiva.",
       img: <FiCheckCircle style={{ color: "white", size: "200px" }} />,
     },
   ];
@@ -54,7 +54,7 @@ export const Features = () => {
         <div className="Title_Features">
           <div>
             <h3>Features</h3>
-            <h2>Your Experience Gets Better And Better Over Time.</h2>
+            <h2>Sua experiência fica cada vez melhor com o tempo.</h2>
             <p>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form.
