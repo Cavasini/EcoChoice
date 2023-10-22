@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <section>
         <div className="footer_section01">
-          <h1>Eco Choise</h1>
+          <h1>Eco Choice</h1>
           <div>
           <img src={AppStore} alt="" />
           <img src={GooglePlay} alt="" />

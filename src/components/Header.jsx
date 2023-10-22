@@ -66,7 +66,7 @@ const Header = ({ sectionIds }) => {
           <div className="ButtonDiv">
             {window.scrollY === 0 ? (
               <Link to={"/register"}>
-                <ButtonHeader primary>Login</ButtonHeader>
+                <ButtonHeader primary={true}>Login</ButtonHeader>
               </Link>
             ) : (
               <Link to={"/register"}>

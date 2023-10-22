@@ -1,6 +1,6 @@
 import { Button } from "./styles";
 import AppleGreen from "../assets/appleGreenSVG.svg";
-import AppleWhite from "../assets/appleWhiteSvg.svg";
+import AppleWhite from "../assets/appleWhiteSVG.svg";
 import GoogleAppWhite from "../assets/googleAppWhite.svg";
 import GoogleAppGreen from "../assets/googleAppGreen.svg";
 
@@ -40,7 +40,7 @@ function HeroButtons() {
         </div>
       </Button>
       <Button
-        primary
+        primary={true}
         onMouseEnter={() => handleHover()}
         onMouseLeave={() => handleLeave()}
       >
