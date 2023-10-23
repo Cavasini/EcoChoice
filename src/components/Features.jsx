@@ -1,11 +1,11 @@
-import { Card } from "./styles";
+import { Card, Square } from "./styles";
+import {PiBowlFoodBold} from "react-icons/pi"
 import {
-  FiClock,
-  FiMap,
+  FiShoppingCart,
   FiSlack,
-  FiRefreshCcw,
-  FiSmartphone,
-  FiCheckCircle,
+  FiBookOpen,
+  FiGlobe,
+  FiUsers,
 } from "react-icons/fi";
 
 export const Features = () => {
@@ -14,13 +14,13 @@ export const Features = () => {
       title: "Alimentação Consciente",
       content:
         "Recomendações e dicas para escolhas de alimentos sustentáveis.",
-      img: <FiClock style={{ color: "white" }} />,
+      img: <PiBowlFoodBold style={{ color: "white" }} />,
     },
     {
       title: "Consumo Responsável",
       content:
         "Guias sobre como fazer compras de forma ecologicamente correta.",
-      img: <FiMap style={{ color: "white" }} />,
+      img: <FiShoppingCart style={{ color: "white" }} />,
     },
     {
       title: "Dicas Diárias",
@@ -32,19 +32,19 @@ export const Features = () => {
       title: "Educação Verde",
       content:
         "Conteúdo educativo para aumentar a conscientização ambiental.",
-      img: <FiRefreshCcw style={{ color: "white" }} />,
+      img: <FiBookOpen style={{ color: "white" }} />,
     },
     {
       title: "Futuro Sustentável",
       content:
         "Planos de expansão e visão a longo prazo do EcoChoice.",
-      img: <FiSmartphone style={{ color: "white" }} />,
+      img: <FiGlobe style={{ color: "white" }} />,
     },
     {
       title: "Comunidade Engajada",
       content:
         "Conexão com outros apoiadores do projeto e ação coletiva.",
-      img: <FiCheckCircle style={{ color: "white", size: "200px" }} />,
+      img: <FiUsers style={{ color: "white", size: 70 }} />,
     },
   ];
 
@@ -65,7 +65,7 @@ export const Features = () => {
           {cardsData.map((card, index) => (
             <section key={index}>
               <Card className="Card">
-                <div className="card-svg">{card.img}</div>
+                <Square>{card.img}</Square>
                 <div className="card-title">
                   <h3>{card.title}</h3>
                 </div>

@@ -65,3 +65,19 @@ export const Title1 = styled.h1`
   color: #224722;
   margin: 20px;
 `;
+
+export const Square = styled.div`
+  display: flex;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e7e3e;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 4px 6px #0000002a;
+  box-shadow: 0px 4px 6px #0000002a;
+`;

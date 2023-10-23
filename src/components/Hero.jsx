@@ -1,8 +1,6 @@
 import {} from "react";
-import AppStore from "/app-store-dark.svg";
-import GooglePlay from "/google-play-dark.svg";
+
 import Mockuo from "../assets/mockup.png"
-import { Button } from "./styles";
 import HeroButtons from "./HeroButtons";
 const Hero = () => {
   return (
