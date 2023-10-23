@@ -56,7 +56,7 @@ export const ButtonHeader = styled.button`
   text-transform: capitalize;
   transition: 0.2s;
   &:hover {
-    background: ${(props) => (props.primary ? "white" : "#3E7E3E")};
+    background: ${(props) => (props.primary ? "white" : "#212529")};
     color: ${(props) => (props.primary ? "green" : "white")};
   }
 `;

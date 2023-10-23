@@ -1,5 +1,29 @@
 .overview{
+    display: flex;
     background-color: #ffffff;
     margin-top: 5%;
     height: 100vh;
+    justify-content: center ;
+    
+    .overview_section{
+        display: flex;
+        align-items: center;
+        max-width: 1140px;
+        border: 1px solid red;
+        justify-content: space-around;
+
+        .overview_textDiv{
+            width: 50%;
+            border: 1px solid red;
+        }
+
+        .overview_imgDiv{
+            width: 50%;
+            border: 1px solid red;
+
+            img{
+                width: 30%;
+            }
+        }
+    }
 }
