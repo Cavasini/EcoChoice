@@ -81,3 +81,11 @@ export const Square = styled.div`
   -webkit-box-shadow: 0px 4px 6px #0000002a;
   box-shadow: 0px 4px 6px #0000002a;
 `;
+
+export const Band = styled.div`
+  display: flex;
+  width:100%;
+  background-color: #3e7e3e;
+
+  
+`

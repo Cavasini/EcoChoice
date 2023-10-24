@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Footer from './components/Footer'
 import Features from './components/Features'
 import Overview from './components/Overview'
+import Percent from './components/Percent'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Hero id="Home"/>
         <Features id="Features"/>
         <Overview/>
+        <Percent/>
          {/* <About id="About"/> */}
         <Footer/> 
     </>
