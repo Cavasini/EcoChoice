@@ -8,10 +8,6 @@ const Footer = () => {
       <section>
         <div className="footer_section01">
           <h1>Eco Choice</h1>
-          <div>
-          <img src={AppStore} alt="" />
-          <img src={GooglePlay} alt="" />
-          </div>
         </div>
         <div className="footer_section02">
           <ul className="ul_main">
@@ -41,9 +37,6 @@ const Footer = () => {
               </ul>
             </li>
           </ul>
-          <p>
-            @2023 Eco Choice. All rights reserved
-          </p>
         </div>
       </section>
     </footer>

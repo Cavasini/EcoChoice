@@ -2,6 +2,7 @@ import { ButtonHeader, Square } from "./styles";
 import { FiBell } from "react-icons/fi";
 import MockupFav from "/mockupFav.svg";
 import blob01 from "../assets/frae.svg";
+import frame2 from "../assets/Frame 2.svg"
 
 function Overview() {
   const overviewData = [
@@ -10,25 +11,24 @@ function Overview() {
       title: "1,25,000 Customers Using The Application!",
       text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
       icon: <FiBell />,
-      img: { blob01 },
+      img: blob01 ,
     },
     {
       side: "left",
       title: "1,25,000 Customers Using The Application!",
       text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
       icon: <FiBell />,
-      img: { blob01 },
+      img: frame2,
     },
     {
       side: "right",
       title: "1,25,000 Customers Using The Application!",
       text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
       icon: <FiBell />,
-      img: { blob01 },
+      img: blob01 ,
     },
   ];
 
-  console.log(blob01);
   return (
     <div className="overview">
       {overviewData.map((data, index) => (
@@ -48,13 +48,13 @@ function Overview() {
                 </div>
               </div>
               <div className="overview_imgDivRight">
-                <img src={data.img.blob01} alt="" className="mockup" />
+                <img src={data.img} alt="" className="mockup" />
               </div>
             </section>
           ) : (
             <section className="overview_section">
               <div className="overview_imgDivLeft">
-                <img src={data.img.blob01} alt="" className="mockup" />
+                <img src={data.img} alt="" className="mockup" />
               </div>
               <div className="overview_textDiv">
                 <div className="textDiv_square">
