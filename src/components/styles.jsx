@@ -57,7 +57,7 @@ export const ButtonHeader = styled.button`
   transition: 0.2s;
   &:hover {
     background: ${(props) => (props.primary ? "white" : "#212529")};
-    color: ${(props) => (props.primary ? "green" : "white")};
+    color: ${(props) => (props.primary ? "#3E7E3E" : "white")};
   }
 `;
 

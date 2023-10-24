@@ -1,29 +1,91 @@
-.overview{
+.overview {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-top: 5%;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+
+  .overview_section {
     display: flex;
-    background-color: #ffffff;
-    margin-top: 5%;
-    height: 100vh;
-    justify-content: center ;
-    
-    .overview_section{
-        display: flex;
-        align-items: center;
-        max-width: 1140px;
-        border: 1px solid red;
-        justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    justify-content: space-around;
+    margin-top: 7%;
 
-        .overview_textDiv{
-            width: 50%;
-            border: 1px solid red;
+    .overview_textDiv {
+      width: 50%;
+      visibility: visible;
+      animation-delay: 0.3s;
+      animation-name: fadeInLeft;
+
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #081828;
+        line-height: 42px;
+        margin-bottom: 25px;
+      }
+      p {
+        color: #6c757d;
+        margin-bottom: 25px;
+        padding: 0;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      .textDiv_buttonDiv {
+        width: 100%;
+
+        button{
+            width: 150px;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 16px 30px;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
         }
+      }
 
-        .overview_imgDiv{
-            width: 50%;
-            border: 1px solid red;
-
-            img{
-                width: 30%;
-            }
+      @keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-20px);
+          -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
         }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
     }
+
+    .overview_imgDivRight {
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      .mockup {
+        width: 70%;
+        height: auto;
+      }
+
+    }
+    .overview_imgDivLeft {
+      display: flex;
+      justify-content: star;
+      width: 50%;
+      .mockup {
+        width: 70%;
+        height: auto;
+      }
+
+    }
+  }
 }

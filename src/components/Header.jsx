@@ -33,6 +33,7 @@ const Header = ({ sectionIds }) => {
         backgroundColor: "white",
         color: "#3E7E3E",
         padding: "5px",
+        boxShadow: "0px 20px 50px 0px rgba(0, 0, 0, 0.05)",
       });
     }
   };

@@ -2,6 +2,8 @@ import {} from "react";
 
 import Mockuo from "../assets/mockup.png"
 import HeroButtons from "./HeroButtons";
+import heroimg from "../assets/Frame 1.svg"
+
 const Hero = () => {
   return (
     <section className="hero_section">

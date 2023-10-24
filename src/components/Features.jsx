@@ -44,7 +44,7 @@ export const Features = () => {
       title: "Comunidade Engajada",
       content:
         "Conexão com outros apoiadores do projeto e ação coletiva.",
-      img: <FiUsers style={{ color: "white", size: 70 }} />,
+      img: <FiUsers style={{ color: "white"}} />,
     },
   ];
 
