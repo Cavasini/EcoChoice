@@ -84,8 +84,12 @@ export const Square = styled.div`
 
 export const Band = styled.div`
   display: flex;
-  width:100%;
+  width: 100%;
+  padding: 80px 0;
   background-color: #3e7e3e;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+`;
 
-  
-`

@@ -43,7 +43,7 @@ const Header = ({ sectionIds }) => {
   return (
     <>
       <header style={HeaderStyle}>
-        <section className="headerSection">
+        <nav className="headerSection">
           <div className="LogoDiv">
             {window.scrollY === 0 ? (
               <img src={LogoWhite} alt="" />
@@ -75,7 +75,7 @@ const Header = ({ sectionIds }) => {
               </Link>
             )}
           </div>
-        </section>
+        </nav>
       </header>
     </>
   );
