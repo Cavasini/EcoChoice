@@ -47,7 +47,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="Features">
+    <section className="Features container mt-5">
       <div className="div_main">
         <Title
           title="Features"
@@ -55,20 +55,22 @@ export const Features = () => {
           text="There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form."
         />
-        <div className="Features_Cards">
-          {cardsData.map((card, index) => (
-            <section key={index}>
-              <Card className="Card">
-                <Square>{card.img}</Square>
-                <div className="card-title">
-                  <h3>{card.title}</h3>
-                </div>
-                <div className="card-content">
-                  <p>{card.content}</p>
-                </div>
-              </Card>
-            </section>
-          ))}
+        <div className="">
+          <div className="row">
+            {cardsData.map((card, index) => (
+              <section key={index} className=" col-md-4 ">
+                <Card className="Card col-md">
+                  <Square>{card.img}</Square>
+                  <div className="card-title mt-3 mb-3 bold">
+                    <h4>{card.title}</h4>
+                  </div>
+                  <div className="card-content">
+                    <p>{card.content}</p>
+                  </div>
+                </Card>
+              </section>
+            ))}
+          </div>
         </div>
       </div>
     </section>

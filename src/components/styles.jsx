@@ -59,6 +59,7 @@ export const ButtonHeader = styled.button`
     background: ${(props) => (props.primary ? "white" : "#212529")};
     color: ${(props) => (props.primary ? "#3E7E3E" : "white")};
   }
+
 `;
 
 export const Title1 = styled.h1`
@@ -80,11 +81,14 @@ export const Square = styled.div`
   border-radius: 7px;
   -webkit-box-shadow: 0px 4px 6px #0000002a;
   box-shadow: 0px 4px 6px #0000002a;
+  @media (max-width: 768px){
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 export const Band = styled.div`
   display: flex;
-  width: 100%;
   padding: 80px 0;
   background-color: #3e7e3e;
   align-items: center;

@@ -32,40 +32,40 @@ function Overview() {
   return (
     <div className="overview">
       {overviewData.map((data, index) => (
-        <div key={index}>
+        <div key={index} className="container">
           {data.side === "right" ? (
-            <section className="overview_section">
-              <div className="overview_textDiv">
+            <section className="OSR overview_section row">
+              <div className="overview_textDiv col-md-6">
                 <div className="textDiv_square">
                   <Square>{data.icon}</Square>
                 </div>
-                <div className="textDiv_textContent">
-                  <h2>{data.title}</h2>
+                <div className="textDiv_textContent mt-3">
+                  <h2 >{data.title}</h2>
                   <p>{data.text}</p>
                 </div>
                 <div className="textDiv_buttonDiv">
                   <ButtonHeader>Get Started</ButtonHeader>
                 </div>
               </div>
-              <div className="overview_imgDivRight">
+              <div className="overview_imgDivRight col-md-6">
                 <img src={data.img} alt="" className="mockup" />
               </div>
             </section>
           ) : (
-            <section className="overview_section">
-              <div className="overview_imgDivLeft">
+            <section className="OSL overview_section row">
+              <div className="overview_imgDivLeft col-md-6">
                 <img src={data.img} alt="" className="mockup" />
               </div>
-              <div className="overview_textDiv">
+              <div className="overview_textDiv col-md-6">
                 <div className="textDiv_square">
                   <Square>{data.icon}</Square>
                 </div>
-                <div className="textDiv_textContent">
+                <div className="textDiv_textContent mt-3 ">
                   <h2>{data.title}</h2>
                   <p>{data.text}</p>
                 </div>
                 <div className="textDiv_buttonDiv">
-                  <ButtonHeader>Get Started</ButtonHeader>
+                  <ButtonHeader >Get Started</ButtonHeader>
                 </div>
               </div>
             </section>

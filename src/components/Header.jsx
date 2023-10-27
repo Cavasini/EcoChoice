@@ -42,8 +42,8 @@ const Header = ({ sectionIds }) => {
 
   return (
     <>
-      <header style={HeaderStyle}>
-        <nav className="headerSection">
+      <header style={HeaderStyle} className="py-0" >
+        <div className="headerSection">
           <div className="LogoDiv">
             {window.scrollY === 0 ? (
               <img src={LogoWhite} alt="" />
@@ -51,8 +51,8 @@ const Header = ({ sectionIds }) => {
               <img src={LogoGreen} alt="" />
             )}
           </div>
-          <div className="PagesDiv">
-            <ul>
+          <div className="PagesDiv align-self-center ">
+            <ul className="mt-3">
               {sectionIds.map((sectionId) => (
                 <li key={sectionId}>
                     <a
@@ -67,15 +67,15 @@ const Header = ({ sectionIds }) => {
           <div className="ButtonDiv">
             {window.scrollY === 0 ? (
               <Link to={"/register"}>
-                <ButtonHeader primary={true}>Login</ButtonHeader>
+                <ButtonHeader className="py-2 fs-6" primary={true}>Login</ButtonHeader>
               </Link>
             ) : (
               <Link to={"/register"}>
-                <ButtonHeader>Login</ButtonHeader>
+                <ButtonHeader className="py-2 fs-6" >Login</ButtonHeader>
               </Link>
             )}
           </div>
-        </nav>
+        </div>
       </header>
     </>
   );

@@ -6,6 +6,7 @@ import Register from "./routes/Register.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.css"
 
 
 const router = createBrowserRouter([

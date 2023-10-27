@@ -11,17 +11,17 @@ function Percent() {
             the majority.
           </p>
         </section>
-        <section className="percent_info">
+        <section className="percent_info mt-3">
           <div>
-            <h3>100%</h3>
+            <h2>100%</h2>
             <p>sastifaction</p>
           </div>
           <div>
-            <h3>100%</h3>
+            <h2>100%</h2>
             <p>sastifaction</p>
           </div>
           <div>
-            <h3>100%</h3>
+            <h2>100%</h2>
             <p>sastifaction</p>
           </div>
         </section>

@@ -8,6 +8,7 @@ header {
   align-items: center;
   transition: all 0.3s ease;
 
+
   .headerSection {
     display: flex;
     max-width: 1140px;
@@ -44,7 +45,6 @@ header {
 
         li {
           a {
-
             text-decoration: none;
           }
 
@@ -109,21 +109,24 @@ header {
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
   header {
-    text-align: center;
-    width: max-content;
-    width: 100%;
+    .headerSection{
+      display: flex;
+      justify-content: center;
 
-    h1 {
-      font-size: 20px;
-    }
-
-    a {
-      margin: 30px;
-      color: #224722;
-      text-decoration: none;
-      font-size: 10px;
+      .LogoDiv{
+        width: 50%;
+      }
+      .PagesDiv{
+        display: none;
+      }
+      .ButtonDiv{
+        display: none;
+        button{
+          font-size: small;
+        }
+      }
     }
   }
 }

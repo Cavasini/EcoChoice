@@ -33,3 +33,14 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .percent{
+    max-width: 200px;
+    .percent_info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}

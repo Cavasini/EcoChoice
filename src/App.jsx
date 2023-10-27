@@ -12,15 +12,15 @@ function App() {
 
 
   return (
-    <>
+    < main className=''>
         <Header sectionIds={['Home', 'Features', 'About', 'Overview']}/>
         <Hero id="Home"/>
         <Features id="Features"/>
         <Overview/>
         <Percent/>
          {/* <About id="About"/> */}
-        <Footer/> 
-    </>
+        {/* <Footer/>  */}
+    </main>
   )
 }
 
