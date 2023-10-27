@@ -1,6 +1,7 @@
 import { ButtonHeader, Square } from "./styles";
 import { FiBell } from "react-icons/fi";
-import MockupFav from "/mockupFav.svg";
+import { GiEcology } from "react-icons/gi";
+import { AiOutlineStar } from "react-icons/ai"
 import blob01 from "../assets/frae.svg";
 import frame2 from "../assets/Frame 2.svg"
 
@@ -8,23 +9,23 @@ function Overview() {
   const overviewData = [
     {
       side: "right",
-      title: "1,25,000 Customers Using The Application!",
-      text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
-      icon: <FiBell />,
+      title: " Página Inicial Sustentável",
+      text: "A página inicial do aplicativo é o ponto de partida para sua jornadade sustentabilidade, oferecendo informações e recursos para inspirarações ecológicas.",
+      icon: <GiEcology />,
       img: blob01 ,
     },
     {
       side: "left",
-      title: "1,25,000 Customers Using The Application!",
-      text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
+      title: "Notificações Eco-Amigáveis",
+      text: "Mantenha-se atualizado com notificações sobre eventos sustentáveis edescontos em produtos eco-friendly, tudo personalizado com base emseus interesses e preferências.",
       icon: <FiBell />,
       img: frame2,
     },
     {
       side: "right",
-      title: "1,25,000 Customers Using The Application!",
-      text: "Collaborate over projects with your team and clients optimised for mobile and tablet dont let slow page speeds drive our innovative platform empowers anyone to convert clicks oull publish your first landing page in minutes.",
-      icon: <FiBell />,
+      title: "Seus Favoritos Verdes",
+      text: "Crie e gerencie sua lista de produtos e lugares favoritos, promovendo um estilo de vida sustentável com facilidade. Personalizesua lista de acordo com suas escolhas ecológicas.",
+      icon: <AiOutlineStar />,
       img: blob01 ,
     },
   ];
