@@ -1,4 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import styled from "styled-components";
+
+const QuestionsandAnswer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+const FaqItemDiv = styled.div`
+border: 1px solid green;
+  display: flex;
+  width: 50%;
+`
+
+
+
 
 class FaqAccordion extends Component {
   constructor(props) {
@@ -19,23 +37,23 @@ class FaqAccordion extends Component {
     const { activeIndex } = this.state;
 
     return (
-      <div className="faq-accordion">
+      <QuestionsandAnswer>
         {faqItems.map((item, index) => (
-          <div key={index} className="faq-item">
+          <FaqItemDiv key={index} className="faq-item">
             <div
-              className={`faq-question ${index === activeIndex ? 'active' : ''}`}
+              className={`faq-question ${
+                index === activeIndex ? "active" : ""
+              }`}
               onClick={() => this.handleClick(index)}
             >
-              {item.question}
+              {item.question}{faqItems.indexOf(item)+1}
             </div>
             {index === activeIndex && (
-              <div className="faq-answer">
-                {item.answer}
-              </div>
+              <div className="faq-answer">{item.answer}</div>
             )}
-          </div>
+          </FaqItemDiv>
         ))}
-      </div>
+      </QuestionsandAnswer>
     );
   }
 }

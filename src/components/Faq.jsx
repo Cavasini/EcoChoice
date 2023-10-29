@@ -1,5 +1,14 @@
 import FaqAccordion from "./Accordion";
 import Title from "./Title";
+import styled from "styled-components";
+
+const FAQ = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+`
+
 
 function Faq(){
   
@@ -25,10 +34,10 @@ function Faq(){
   ];
   
   return(
-    <section>
+    <FAQ>
     <Title title='Faq' caption='teste' text='ahbkbka'/>
     <FaqAccordion faqItems={faqInfo}/>
-    </section>
+    </FAQ>
   )
 }
 export default Faq
