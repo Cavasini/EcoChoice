@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Features from './components/Features'
 import Overview from './components/Overview'
 import Percent from './components/Percent'
-import Accordion from './components/Accordion'
+import Faq from './components/Faq'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Features id="Features"/>
         <Overview/>
         <Percent/>
-        <Accordion/>
+        <Faq/>
          {/* <About id="About"/> */}
         {/* <Footer/>  */}
     </main>

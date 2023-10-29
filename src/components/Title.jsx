@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
-const TitleSectionF = styled.div`
+const TitleX = styled.div`
+display: flex;
+justify-content: center;
   width: 100%;
+`;
+const TitleSectionF = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,11 +32,13 @@ const TitleSection_P = styled.p`
 
 const Title = ({ title, caption, text }) => {
   return (
-    <TitleSectionF>
+    <TitleX>
+      <TitleSectionF>
         <TitleSection_H3>{title}</TitleSection_H3>
         <TitleSection_H2>{caption}</TitleSection_H2>
         <TitleSection_P>{text}</TitleSection_P>
-    </TitleSectionF>
+      </TitleSectionF>
+    </TitleX>
   );
 };
 

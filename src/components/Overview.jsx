@@ -1,6 +1,6 @@
 import { ButtonHeader, Square } from "./styles";
 import { FiBell } from "react-icons/fi";
-import { GiEcology } from "react-icons/gi";
+import { BiWorld } from "react-icons/bi";
 import { AiOutlineStar } from "react-icons/ai"
 import blob01 from "../assets/frae.svg";
 import frame2 from "../assets/Frame 2.svg"
@@ -11,7 +11,7 @@ function Overview() {
       side: "right",
       title: " Página Inicial Sustentável",
       text: "A página inicial do aplicativo é o ponto de partida para sua jornadade sustentabilidade, oferecendo informações e recursos para inspirarações ecológicas.",
-      icon: <GiEcology />,
+      icon: <BiWorld />,
       img: blob01 ,
     },
     {
