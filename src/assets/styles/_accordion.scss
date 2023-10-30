@@ -1,5 +1,10 @@
-.faq-item{
-    *{
-        border: 1px solid red;
+.accordion{
+    .active{
+        .Faq-header{
+            background-color: #3E7E3E;
+            .question{
+                color: white;
+            }
+        }
     }
 }
