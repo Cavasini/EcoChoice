@@ -84,9 +84,6 @@
   }
 }
 
-
-
-
 @media (max-width: 769px) {
   .OSD{
     display: flex;
@@ -161,6 +158,11 @@
   .overview {
     .overview_section {
       max-width: 1140px;
+    }
+    .textDiv_buttonDiv{
+      button{
+        display: none;
+      }
     }
   }
 }

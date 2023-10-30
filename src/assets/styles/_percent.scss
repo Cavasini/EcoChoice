@@ -38,9 +38,9 @@
   .percent{
     max-width: 200px;
     .percent_info{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      display: none;
+      // flex-direction: column;
+      // justify-content: space-around;
     }
   }
 }
