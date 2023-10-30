@@ -20,9 +20,9 @@ const FaqItemDiv = styled.div`
 `;
 
 const FaqSection = styled.section`
-display: flex;
-flex-direction: row;
-`
+  display: flex;
+  flex-direction: row;
+`;
 
 class FaqAccordion extends Component {
   constructor(props) {
@@ -45,23 +45,24 @@ class FaqAccordion extends Component {
     return (
       <QuestionsandAnswer className="col-12">
         {faqItems.map((item, index) => (
-          <FaqItemDiv key={index} className={`faq-item ${index === activeIndex ? "active" : ""}`} onClick={() => this.handleClick(index)}>
+          <FaqItemDiv
+            key={index}
+            className={`faq-item ${index === activeIndex ? "active" : ""}`}
+            onClick={() => this.handleClick(index)}
+          >
             <FaqSection>
               <div>{faqItems.indexOf(item) + 1}</div>
-              <div
-                className="faq-question"
-                >
-                <h6>
-
-                {item.question}
-                </h6>
+              <div className="faq-question">
+                <h6>{item.question}</h6>
               </div>
               <div>
                 <AiOutlinePlus style={{ color: " black " }} />
               </div>
-                </FaqSection>
+            </FaqSection>
             {index === activeIndex && (
-              <FaqSection className="faq-answer bg-gray">{item.answer}</FaqSection>
+              <FaqSection className="faq-answer bg-gray">
+                {item.answer}
+              </FaqSection>
             )}
           </FaqItemDiv>
         ))}
