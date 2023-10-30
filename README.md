@@ -42,11 +42,11 @@ Para acessar e visualizar a versão mais recente do projeto EcoChoice, você pod
 ### Para acessar o projeto, https://eco-choice.vercel.app
 
 ## 🤝 Integrantes do Grupo
+- Matheus Cavasini - 97722
 - Allan Von Ivanov - 98705
 - Cassio Yonetsuka - 99678
 - Guilherme Brazioli - 98237
 - Lourenzo Ramos - 99951
-- Matheus Cavasini - 97722.
 
 ## ⚙️ Executando o Projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
