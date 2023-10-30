@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom";
-import { ButtonHeader } from "./styles";
+// import { Link } from "react-router-dom";
+// import { ButtonHeader } from "./styles";
 import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
 import { useState } from "react";
 
 const Header = ({ sectionIds }) => {
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const scrollToSection = (sectionId) => {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   const styleDeafult = {
     backgroundColor: "transparent",
@@ -42,7 +41,7 @@ const Header = ({ sectionIds }) => {
 
   return (
     <>
-      <header style={HeaderStyle} className="py-0" >
+      <header style={HeaderStyle} className="py-0">
         <div className="headerSection">
           <div className="LogoDiv">
             {window.scrollY === 0 ? (
@@ -55,17 +54,13 @@ const Header = ({ sectionIds }) => {
             <ul className="mt-3">
               {sectionIds.map((sectionId) => (
                 <li key={sectionId}>
-                    <a
-                      style={{ color: HeaderStyle.color }}
-                    >
-                      {sectionId}
-                    </a>
+                  <a style={{ color: HeaderStyle.color }}>{sectionId}</a>
                 </li>
               ))}
             </ul>
           </div>
           <div className="ButtonDiv">
-            {window.scrollY === 0 ? (
+            {/* {window.scrollY === 0 ? (
               <Link to={"/register"}>
                 <ButtonHeader className="py-2 fs-6" primary={true}>Login</ButtonHeader>
               </Link>
@@ -73,7 +68,37 @@ const Header = ({ sectionIds }) => {
               <Link to={"/register"}>
                 <ButtonHeader className="py-2 fs-6" >Login</ButtonHeader>
               </Link>
-            )}
+            )} */}
+
+            <div className="dropdown">
+              <a
+                className="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>

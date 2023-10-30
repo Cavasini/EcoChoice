@@ -27,7 +27,7 @@ export const Card = styled.form`
 
 export const Button = styled.button`
   background: ${(props) => (props.primary ? "transparent" : "white")};
-  color: ${(props) => (props.primary ? "white" : "green")};
+  color: ${(props) => (props.primary ? "white" : "#3e7e3e")};
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;

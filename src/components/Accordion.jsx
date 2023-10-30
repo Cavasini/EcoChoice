@@ -1,22 +1,28 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import styled from "styled-components";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const QuestionsandAnswer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
 `;
 
 const FaqItemDiv = styled.div`
-border: 1px solid green;
+  border: 1px solid gray;
   display: flex;
-  width: 50%;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+`;
+
+const FaqSection = styled.section`
+display: flex;
+flex-direction: row;
 `
-
-
-
 
 class FaqAccordion extends Component {
   constructor(props) {
@@ -37,19 +43,25 @@ class FaqAccordion extends Component {
     const { activeIndex } = this.state;
 
     return (
-      <QuestionsandAnswer>
+      <QuestionsandAnswer className="col-12">
         {faqItems.map((item, index) => (
-          <FaqItemDiv key={index} className="faq-item">
-            <div
-              className={`faq-question ${
-                index === activeIndex ? "active" : ""
-              }`}
-              onClick={() => this.handleClick(index)}
-            >
-              {item.question}{faqItems.indexOf(item)+1}
-            </div>
+          <FaqItemDiv key={index} className={`faq-item ${index === activeIndex ? "active" : ""}`} onClick={() => this.handleClick(index)}>
+            <FaqSection>
+              <div>{faqItems.indexOf(item) + 1}</div>
+              <div
+                className="faq-question"
+                >
+                <h6>
+
+                {item.question}
+                </h6>
+              </div>
+              <div>
+                <AiOutlinePlus style={{ color: " black " }} />
+              </div>
+                </FaqSection>
             {index === activeIndex && (
-              <div className="faq-answer">{item.answer}</div>
+              <FaqSection className="faq-answer bg-gray">{item.answer}</FaqSection>
             )}
           </FaqItemDiv>
         ))}
