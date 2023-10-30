@@ -80,7 +80,7 @@ class FaqAccordion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeIndex: -1,
+      activeIndex: 0,
     };
   }
 
@@ -101,7 +101,7 @@ class FaqAccordion extends Component {
         {faqItems.map((item, index) => (
           <FaqItemDiv
             key={index}
-            className={`faq-item ${index === activeIndex ? "active" : "closed"}`}
+            className={`faq-item ${index === activeIndex ? "active" : ""}`}
             onClick={() => this.handleClick(index)}
           >
             <FaqSection className="Faq-header">
@@ -119,6 +119,7 @@ class FaqAccordion extends Component {
           </FaqItemDiv>
         ))}
       </QuestionsandAnswer>
+      
     );
   }
 }
