@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/styles/index.scss"
 import App from "./App.jsx";
-import Register from "./routes/Register.jsx";
+import Home from "./routes/Home";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -13,11 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+
+    children: [
+      { path: "/", element: <Home/>},
+    ]
   },
-  {
-    path: "/register",
-    element: <Register />,
-  },
+
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

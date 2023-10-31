@@ -1,4 +1,4 @@
-import { Component, useState, useEffect } from "react";
+import { Component } from "react";
 import styled from "styled-components";
 import { AiOutlinePlus, AiOutlineThunderbolt } from "react-icons/ai";
 
@@ -21,6 +21,7 @@ const FaqItemDiv = styled.div`
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     .index {
+      position: absolute;
       height: 30px;
       width: 30px;
       color: #081828;
@@ -39,7 +40,7 @@ const FaqItemDiv = styled.div`
     }
   }
 
-  .faq-answer{
+  .faq-answer {
     color: #777;
     font-size: 15px;
     line-height: 24px;
@@ -76,15 +77,12 @@ const FaqSection = styled.section`
 
 // const [FaqOpenStyle, setFaqOpenStyle] = useState()
 class FaqAccordion extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       activeIndex: 0,
     };
   }
-
-
 
   handleClick(index) {
     this.setState((prevState) => ({
@@ -110,7 +108,11 @@ class FaqAccordion extends Component {
                 <span className="question">{item.question}</span>
               </div>
               <div>
-                {index === activeIndex ? (<AiOutlineThunderbolt style={{ color: " white " }} />): (<AiOutlinePlus style={{ color: " #081828 " }} />)}
+                {index === activeIndex ? (
+                  <AiOutlineThunderbolt style={{ color: " white " }} />
+                ) : (
+                  <AiOutlinePlus style={{ color: " #081828 " }} />
+                )}
               </div>
             </FaqSection>
             {index === activeIndex && (
@@ -119,7 +121,6 @@ class FaqAccordion extends Component {
           </FaqItemDiv>
         ))}
       </QuestionsandAnswer>
-      
     );
   }
 }

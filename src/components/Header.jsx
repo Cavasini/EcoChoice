@@ -2,7 +2,7 @@
 // import { ButtonHeader } from "./styles";
 import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
-import { useState } from "react";
+import {  useState } from "react";
 
 const Header = ({ sectionIds }) => {
   // const scrollToSection = (sectionId) => {
@@ -20,12 +20,15 @@ const Header = ({ sectionIds }) => {
 
   const [HeaderStyle, setHeaderStyle] = useState(styleDeafult);
 
+  const [dropdown, setDropdown] = useState({});
+
   const handleScroll = () => {
     if (window.scrollY === 0) {
       setHeaderStyle({
         backgroundColor: "transparent",
         color: "white",
         padding: "10px",
+        top: true,
       });
     } else {
       setHeaderStyle({
@@ -36,8 +39,23 @@ const Header = ({ sectionIds }) => {
       });
     }
   };
-
   window.addEventListener("scroll", handleScroll);
+
+  const handleMouserHover = () => {
+    setDropdown({
+      backgroundColor: window.scrollY === 0 ? "white" : "#212529",
+      color: window.scrollY === 0 ? "#3E7E3E" : "white",
+    });
+  };
+
+  const handleMouseOut = () => {
+    setDropdown({
+      backgroundColor: "#3E7E3E",
+      color: "white",
+    });
+  };
+
+
 
   return (
     <>
@@ -60,16 +78,6 @@ const Header = ({ sectionIds }) => {
             </ul>
           </div>
           <div className="ButtonDiv">
-            {/* {window.scrollY === 0 ? (
-              <Link to={"/register"}>
-                <ButtonHeader className="py-2 fs-6" primary={true}>Login</ButtonHeader>
-              </Link>
-            ) : (
-              <Link to={"/register"}>
-                <ButtonHeader className="py-2 fs-6" >Login</ButtonHeader>
-              </Link>
-            )} */}
-
             <div className="dropdown">
               <a
                 className="btn btn-secondary dropdown-toggle"
@@ -77,6 +85,13 @@ const Header = ({ sectionIds }) => {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{
+                  border: `1px solid ${HeaderStyle.color}`,
+                  backgroundColor: dropdown.backgroundColor,
+                  color: dropdown.color,
+                }}
+                onMouseEnter={handleMouserHover}
+                onMouseLeave={handleMouseOut}
               >
                 Dropdown link
               </a>
@@ -94,7 +109,7 @@ const Header = ({ sectionIds }) => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Something
                   </a>
                 </li>
               </ul>

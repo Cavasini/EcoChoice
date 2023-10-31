@@ -55,34 +55,45 @@ header {
 
     .ButtonDiv {
       width: 20%;
-      a {
-        width: 70%;
-        text-decoration: none;
-        display: flex;
-        color: red;
-        justify-content: center;}
-        ul{
+
+      .dropdown {
+
+        .btn {
           width: 70%;
-          li{
+          text-decoration: none;
+          display: flex;
+          border: 1px solid white;
+          align-items: center;
+          justify-content: center;
+          background-color: #3E7E3E;
+        }
+
+
+        ul {
+          width: 70%;
+
+          li {
             display: flex;
             width: 100%;
-            justify-content: center ;
+            justify-content: center;
             text-align: center;
-            a{
+
+            a {
               width: 100%;
               color: black;
             }
           }
         }
-
-        button {
-          width: 45%;
-          padding: 14px 10px;
-          font-size: 15px;
-          font-weight: 600;
-        }
       }
-    
+
+      button {
+        width: 45%;
+        padding: 14px 10px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
 
     .link_github {
       cursor: pointer;
@@ -123,19 +134,22 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    .headerSection{
+    .headerSection {
       display: flex;
       justify-content: center;
 
-      .LogoDiv{
+      .LogoDiv {
         width: 50%;
       }
-      .PagesDiv{
+
+      .PagesDiv {
         display: none;
       }
-      .ButtonDiv{
+
+      .ButtonDiv {
         display: none;
-        button{
+
+        button {
           font-size: small;
         }
       }

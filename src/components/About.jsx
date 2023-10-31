@@ -4,7 +4,6 @@ import mockupHome from "/mockupHome.svg";
 import mockupNotficacoes from "/mockupNotifica.svg";
 import mockupFavoritos from "/mockupFav.svg";
 
-import * as S from "./styles";
 
 const About = () => {
   return (
