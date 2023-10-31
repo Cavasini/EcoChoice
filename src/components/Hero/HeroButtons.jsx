@@ -1,8 +1,8 @@
-import { Button } from "./styles";
-import AppleGreen from "../assets/appleGreenSVG.svg";
-import AppleWhite from "../assets/appleWhiteSVG.svg";
-import GoogleAppWhite from "../assets/googleAppWhite.svg";
-import GoogleAppGreen from "../assets/googleAppGreen.svg";
+import { Button } from "../styles";
+import AppleGreen from "../../assets/img/appleGreenSVG.svg";
+import AppleWhite from "../../assets/img/appleWhiteSVG.svg";
+import GoogleAppWhite from "../../assets/img/googleAppWhite.svg";
+import GoogleAppGreen from "../../assets/img/googleAppGreen.svg";
 
 import { useState } from "react";
 

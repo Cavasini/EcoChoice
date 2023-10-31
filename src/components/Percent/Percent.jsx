@@ -1,4 +1,4 @@
-import { Band } from "./styles";
+import { Band } from "../styles";
 
 function Percent() {
   return (

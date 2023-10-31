@@ -1,0 +1,17 @@
+@import '../components/Header/header';
+@import '../components/Footer/footer';
+@import '../components/Hero/hero';
+@import '../components/Form/form';
+@import '../components//Overview/overview';
+@import '../components/Percent/percent';
+@import '../components/Faq/accordion';
+
+
+body{
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+}
+// ::-webkit-scrollbar {
+//     width: 0px;
+// }

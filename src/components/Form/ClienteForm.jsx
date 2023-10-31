@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {Input, Button } from "./styles";
+import  { useState, useEffect } from "react";
+import {Input, Button } from "../styles";
 
 const generateUniqueKey = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

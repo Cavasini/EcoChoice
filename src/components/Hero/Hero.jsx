@@ -1,6 +1,6 @@
 import {} from "react";
 
-import Mockuo from "../assets/mockup.png";
+import Mockuo from "../../assets/img/mockup.png";
 import HeroButtons from "./HeroButtons";
 
 const Hero = () => {

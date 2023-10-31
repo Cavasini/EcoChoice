@@ -18,6 +18,7 @@ export const Card = styled.form`
   margin-top: 30px;
   border: 1px solid #eee;
   animation-delay: 0.2s;
+  height:270px;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   &:hover {
     transform: translateY(-5px);

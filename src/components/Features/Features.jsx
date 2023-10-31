@@ -1,4 +1,4 @@
-import { Card, Square } from "./styles";
+import { Card, Square } from "../styles";
 import { PiBowlFoodBold } from "react-icons/pi";
 import {
   FiShoppingCart,
@@ -8,7 +8,7 @@ import {
   FiUsers,
 } from "react-icons/fi";
 
-import Title from "./Title";
+import Title from "../Title";
 
 export const Features = () => {
   const cardsData = [

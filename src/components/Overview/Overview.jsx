@@ -1,9 +1,9 @@
-import { ButtonHeader, Square } from "./styles";
+import { ButtonHeader, Square } from "../styles";
 import { FiBell } from "react-icons/fi";
 import { BiWorld } from "react-icons/bi";
 import { AiOutlineStar } from "react-icons/ai"
-import blob01 from "../assets/frae.svg";
-import frame2 from "../assets/Frame 2.svg"
+import blob01 from "../../assets/img/frae.svg";
+import frame2 from "../../assets/img/Frame 2.svg"
 
 function Overview() {
   const overviewData = [

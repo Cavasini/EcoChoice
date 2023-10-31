@@ -1,5 +1,5 @@
 import FaqAccordion from "./Accordion";
-import Title from "./Title";
+import Title from "../Title";
 import styled from "styled-components";
 
 const FAQ = styled.section`
