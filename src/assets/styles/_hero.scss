@@ -58,6 +58,7 @@
         flex-direction: row;
         gap: 5%;
         align-items: center;
+
         button {
           display: flex;
           align-items: center;
@@ -67,14 +68,17 @@
           width: 34%;
           max-height: 50px;
           gap: 10px;
+
           .divButtonImg {
             display: flex;
             align-items: center;
             width: 20%;
+
             img {
               width: 80%;
             }
           }
+
           .divButtonName {
             display: flex;
             justify-content: center;
@@ -85,6 +89,7 @@
             font-weight: 600;
             align-items: center;
             text-align: center;
+
             span {
               align-items: center;
             }
@@ -98,20 +103,24 @@
 @media (max-width: 768px) {
   .hero_section {
     height: 110vh;
+
     .heroDiv {
       .row {
         display: flex;
         justify-content: center;
       }
+
       .hero_textDiv {
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;
         justify-content: center;
+
         .hero_storeApp {
           display: none;
           justify-content: center;
+
           .divButtonImg {
             img {
               width: 100%;
@@ -119,9 +128,11 @@
           }
         }
       }
+
       .hero_imgDiv {
         margin-top: -10%;
         width: 100%;
+
         img {
           width: 100%;
         }
@@ -135,8 +146,28 @@
     .hero_textDiv {
       width: 45%;
     }
+
     .hero_imgDiv {
       width: 50%;
+    }
+  }
+}
+
+@media (max-width: 790px) and (min-width: 425px) {
+  .hero_section {
+    height: 140vh;
+  }
+
+  .heroDiv {
+    margin-top: 10%;
+  }
+
+  .hero_imgDiv {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 10%;
     }
   }
 }

@@ -6,7 +6,7 @@ const FAQ = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1.7% auto 1.7%;
+  margin: 2% auto 2%;
 `;
 
 function Faq() {

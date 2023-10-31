@@ -4,6 +4,7 @@ const TitleX = styled.div`
 display: flex;
 justify-content: center;
   width: 100%;
+  margin: 4%;
 `;
 const TitleSectionF = styled.div`
   width: 50%;
