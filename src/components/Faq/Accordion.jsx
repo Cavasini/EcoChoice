@@ -11,6 +11,7 @@ const QuestionsandAnswer = styled.div`
 
 const FaqItemDiv = styled.div`
   border: 1px solid #eee;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
