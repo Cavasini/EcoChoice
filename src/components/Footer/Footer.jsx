@@ -1,29 +1,26 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Importe os ícones que você deseja usar
-import EcoChoiceLogo from "/ecoLogoWhite.svg"
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importe os ícones das redes sociais que deseja usar
+
 const Footer = () => {
   return (
-    <footer className=" text-light">
+    <footer className="text-light">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <div className="logo">
-              <img src={EcoChoiceLogo} alt="Logo do site" />
+          <div className="Info">
+            <h2>Escolha a Natureza, escolha o Futuro.</h2>
+            <p> Aqui, acreditamos que cada escolha conta, e é por meio dessas escolhas que moldamos um futuro mais verde e sustentável. Junte-se a nós nessa jornada e faça sua EcoChoice hoje. </p>
+            <div className="info-a ">
+              <a href="">👀 Code</a>
+              <a href="">👋 Contact</a>
             </div>
           </div>
-          <div className="col-md-6">
-            <div className="social-icons">
-              <a href="#" className="text-light">
-                <FaFacebook />
-              </a>
-              <a href="#" className="text-light">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-light">
-                <FaInstagram />
-              </a>
-              <a href="#" className="text-light">
-                <FaLinkedin />
-              </a>
+          <div className="SM">
+            <img src="/ecoLogoWhite.svg" alt="" />
+            <p>@ 2023 EcoChoice. All Rights Reserved.</p>
+            <div className="socialMedia">
+              <a href=""><FaFacebook style={{ color: "white" }}/></a>
+              <a href=""><FaTwitter style={{ color: "white" }}/></a>
+              <a href=""><FaInstagram style={{ color: "white",  }}/></a>
             </div>
           </div>
         </div>

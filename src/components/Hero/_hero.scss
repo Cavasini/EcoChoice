@@ -7,20 +7,25 @@
   color: #ffff;
   padding: 16px;
   align-items: center;
-
+  
   .heroDiv {
+
+    
+    
+    
     display: flex;
     box-sizing: content-box;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
     .row {
       display: flex;
       justify-content: space-around;
       align-items: center;
-
+      
       .hero_textDiv {
+        animation: fadeInLeft 1s linear;
         align-items: center;
 
         h1 {
@@ -44,6 +49,7 @@
       }
 
       .hero_imgDiv {
+        animation: fadeInRight 1s linear;
         display: flex;
         justify-content: center;
 

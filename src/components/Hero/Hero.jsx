@@ -1,12 +1,13 @@
-import {} from "react";
-
+import { useState } from "react";
 import Mockuo from "../../assets/img/mockup.png";
 import HeroButtons from "./HeroButtons";
 
+
+
 const Hero = () => {
   return (
-    <section className="hero_section ">
-      <div className="heroDiv container">
+    <section className="hero_section" >
+      <div className="heroDiv container ">
         <div className="row">
           <div className="hero_textDiv col-md-6">
             <h1 className="fs-1">Conectando Ecologia com Bluetooth</h1>

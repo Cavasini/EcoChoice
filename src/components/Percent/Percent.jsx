@@ -5,24 +5,24 @@ function Percent() {
     <Band>
       <div className="percent">
         <section className="percent_title">
-          <h2>Trusted by developers from over 80 planets</h2>
+          <h2> Compromisso Sustentável Para Um Futuro Melhor</h2>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority.
+            EcoChoice se dedica a preservar a natureza, promovendo práticas
+            sustentáveis e conscientes.
           </p>
         </section>
         <section className="percent_info mt-3">
           <div>
             <h2>100%</h2>
-            <p>sastifaction</p>
+            <p>Satisfação</p>
           </div>
           <div>
             <h2>100%</h2>
-            <p>sastifaction</p>
+            <p>Segurança</p>
           </div>
           <div>
             <h2>100%</h2>
-            <p>sastifaction</p>
+            <p>Sustentável</p>
           </div>
         </section>
       </div>

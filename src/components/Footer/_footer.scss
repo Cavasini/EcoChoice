@@ -1,9 +1,100 @@
 footer{
-    background: #3e7e3e;
+    background-color: #3e7e3e;
     padding: 3%;
-    .logo{
-        img{
-            width: 30%;
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .Info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            gap: 12px;
+            p{
+                font-size: 14px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+            }
+            .info-a{
+                display: flex;
+                flex-direction: row;
+                a{
+                    background-color: #366e36;
+                    padding: 10px;
+                    border-radius: 20px;
+                    margin: 10px;
+                    color: white;
+                    text-decoration: none;
+                    :hover{
+                        background-color: #3b3f3b;
+                    }
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+        .SM{
+            display: flex;
+            flex-direction: row;
+            border-top: 0.1px solid white;
+            margin-top: 20px;
+            padding: 15px;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 15%;
+            }
+            p{
+                margin-top: 2%;
+            }
+
+            .socialMedia{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 100%;
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        .row{
+            .Info{
+                text-align: center;
+                flex-direction: column;
+                .info-a{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .SM{
+                flex-direction: column;
+                *{
+                    padding: 5px;
+                }
+                img{
+                    width: 50%;
+                }
+                p{
+                    display: none;
+                }
+                .socialMedia{
+                    display: none;
+                }
+            }
         }
     }
 }
