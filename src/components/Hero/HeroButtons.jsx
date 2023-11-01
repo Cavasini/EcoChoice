@@ -1,4 +1,4 @@
-import { Button } from "../styles";
+import { Button } from "./style";
 import AppleGreen from "../../assets/img/appleGreenSVG.svg";
 import AppleWhite from "../../assets/img/appleWhiteSVG.svg";
 import GoogleAppWhite from "../../assets/img/googleAppWhite.svg";
