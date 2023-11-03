@@ -2,15 +2,20 @@
 // import { ButtonHeader } from "./styles";
 import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
-import {  useState } from "react";
+import { useState } from "react";
 
-const Header = ({ sectionIds }) => {
-  // const scrollToSection = (sectionId) => {
-  //   const section = document.getElementById(sectionId);
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
+const Header = ({HeaderIds}) => {
+
+   const scrollToSection = (sectionId) => {
+    switch(sectionId){
+      case "FeaturesRef":
+        const section = document.getElementById("FeaturesRef");
+    }
+    console.log(section)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   const styleDeafult = {
     backgroundColor: "transparent",
@@ -55,8 +60,6 @@ const Header = ({ sectionIds }) => {
     });
   };
 
-
-
   return (
     <>
       <header style={HeaderStyle} className="py-0">
@@ -70,9 +73,14 @@ const Header = ({ sectionIds }) => {
           </div>
           <div className="PagesDiv align-self-center ">
             <ul className="mt-3">
-              {sectionIds.map((sectionId) => (
-                <li key={sectionId}>
-                  <a style={{ color: HeaderStyle.color }}>{sectionId}</a>
+              {HeaderIds.map((Id,index) => (
+                <li key={index}>
+                  <a
+                    style={{ color: HeaderStyle.color }}
+                    onClick={()=> scrollToSection(Id.ref)}
+                  >
+                    {Id.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -93,7 +101,7 @@ const Header = ({ sectionIds }) => {
                 onMouseEnter={handleMouserHover}
                 onMouseLeave={handleMouseOut}
               >
-                Menu 
+                Menu
               </a>
 
               <ul className="dropdown-menu">

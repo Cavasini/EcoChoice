@@ -10,8 +10,8 @@ const Footer = () => {
             <h2>Escolha a Natureza, escolha o Futuro.</h2>
             <p> Aqui, acreditamos que cada escolha conta, e é por meio dessas escolhas que moldamos um futuro mais verde e sustentável. Junte-se a nós nessa jornada e faça sua EcoChoice hoje. </p>
             <div className="info-a ">
-              <a href="">👀 Code</a>
-              <a href="">👋 Contact</a>
+              <a href="https://github.com/Cavasini/EcoChoice">👀 Code</a>
+              <a href="https://github.com/Cavasini">👋 Contact</a>
             </div>
           </div>
           <div className="SM">

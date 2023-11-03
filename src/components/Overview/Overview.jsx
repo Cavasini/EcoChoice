@@ -3,7 +3,7 @@ import { overviewData } from "./overviewData";
 
 function Overview() {
   return (
-    <div className="overview">
+    <div className="overview" id="OverviewRef">
       {overviewData.map((data, index) => (
         <div key={index} className="container">
           {data.side === "right" ? (

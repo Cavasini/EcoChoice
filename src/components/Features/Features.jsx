@@ -5,7 +5,7 @@ import { cardsData } from "./featuresData";
 
 const Features = () => {
   return (
-    <div className="Features-Background">
+    <div className="Features-Background" id="FeaturesRef">
       <section className="Features container mt-5">
         <div className="div_main">
           <Title
