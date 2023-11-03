@@ -7,13 +7,10 @@ import { useState } from "react";
 const Header = ({HeaderIds}) => {
 
    const scrollToSection = (sectionId) => {
-    switch(sectionId){
-      case "FeaturesRef":
-        const section = document.getElementById("FeaturesRef");
-    }
-    console.log(section)
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+     let section = ''
+     section = document.getElementById(sectionId)
+     if (section) {
+    section.scrollIntoView({ behavior: 'smooth',block: 'start' });
     }
   }
 

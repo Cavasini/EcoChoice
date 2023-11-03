@@ -6,7 +6,7 @@ import HeroButtons from "./HeroButtons";
 
 const Hero = () => {
   return (
-    <section className="hero_section" >
+    <section className="hero_section" id="HeroRef" >
       <div className="heroDiv container ">
         <div className="row">
           <div className="hero_textDiv col-md-6">
