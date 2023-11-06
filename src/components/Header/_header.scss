@@ -78,9 +78,14 @@ header {
             justify-content: center;
             text-align: center;
 
+            :active{
+              background-color: #3E7E3E;
+              color: white;
+            }
             a {
               width: 100%;
               color: black;
+
             }
           }
         }

@@ -1,24 +1,22 @@
-import {} from 'react'
-import ClienteForm from "../components/ClienteForm"
-import BackIcon from '/back.svg'
-import { Link } from 'react-router-dom'
-import * as S from '../components/styles'
+import {} from "react";
 
 
-function Register(){
-    return (
-        <section className='FormRegister'> 
-        <div className="container">
-            <S.Title1>Cadastre-se para adquirir o Eco Choice app</S.Title1>
-            <Link to='/'>
-            <img src={BackIcon} alt="" />
-            </Link>
-            <S.Card className="card">
-            <ClienteForm/>
-            </S.Card>
-        </div>
-        </section>
+function Register() {
+  return (
+    <>
+      <form action="processar_cadastro.php" method="post">
+        <label type="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
 
-    )
+        <label type="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label type="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required />
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </>
+  );
 }
-export default Register
+export default Register;

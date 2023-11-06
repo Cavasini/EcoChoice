@@ -3,6 +3,7 @@
 import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({HeaderIds}) => {
 
@@ -103,19 +104,14 @@ const Header = ({HeaderIds}) => {
 
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
+                  <Link className="dropdown-item" to={'/register'}>
+                    Cadastro
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="http://localhost:5000">
-                    Apis
-                  </a>
+                  <Link className="dropdown-item" to={"/admin"}>
+                    Admin
+                  </Link>
                 </li>
               </ul>
             </div>
