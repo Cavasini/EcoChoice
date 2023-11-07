@@ -4,7 +4,7 @@ const AdminAcess = () => {
   const [clients, setClient] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/client/")
+    fetch("http://localhost:5000/clients/")
       .then((resp) => {
         return resp.json();
       })
