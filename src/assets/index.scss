@@ -1,10 +1,12 @@
 @import '../components/Header/header';
 @import '../components/Footer/footer';
 @import '../components/Hero/hero';
-@import '../components/Form/form';
+@import '../components/Register/form';
 @import '../components//Overview/overview';
 @import '../components/Percent/percent';
 @import '../components/Faq/accordion';
+@import "../components/Admin/Admin.scss";
+@import "../components/Register/register";
 
 
 body{

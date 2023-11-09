@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./assets/index.scss"
 import App from "./App.jsx";
 import Home from "./routes/Home";
-import Register from "./routes/Register";
 // import AdminLogin from "./routes/AdminLogin";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AdminAcess from "./routes/AdminAcess";
+import RegisterPage from "./routes/RegisterPage.jsx";
 
 
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 
     children: [
       { path: "/", element: <Home/>},
-      { path:"register", element: <Register/>},
+      { path:"register", element: <RegisterPage/>},
       { path:"admin", element: <AdminAcess/>}
     ]
   },

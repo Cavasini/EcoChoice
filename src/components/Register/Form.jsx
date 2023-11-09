@@ -1,5 +1,5 @@
 import {} from "react";
-import "./form.css"
+import "./form.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -36,7 +36,28 @@ function Form() {
   }
 
   const handleChange = (e) => {
-    setClient({ ...client, [e.target.name]: e.target.value });
+    if (e.target.name === "cel") {
+      let inputPhoneNumber = e.target.value.replace(/\D/g, '');
+      console.log(inputPhoneNumber)
+      let formattedNumber = "";
+      if (inputPhoneNumber.length <= 2) {
+        formattedNumber = `(${inputPhoneNumber}`;
+      } else if (inputPhoneNumber.length <= 7) {
+        formattedNumber = `(${inputPhoneNumber.slice(
+          0,
+          2
+        )}) ${inputPhoneNumber.slice(2)}`;
+      } else {
+        formattedNumber = `(${inputPhoneNumber.slice(
+          0,
+          2
+        )}) ${inputPhoneNumber.slice(2, 7)}-${inputPhoneNumber.slice(7, 11)}`;
+      }
+      setClient({ ...client, [e.target.name]: formattedNumber });
+
+    } else {
+      setClient({ ...client, [e.target.name]: e.target.value });
+    }
   };
 
   const OnSubmit = () => {
@@ -80,7 +101,7 @@ function Form() {
           type="text"
           name="name"
           value={client.name}
-          placeholder="Digite seu nome"
+          placeholder="Fulano da Silva"
           onChange={handleChange}
         />
         <span className="text-danger">{errors.name?.message}</span>
@@ -91,7 +112,7 @@ function Form() {
           type="text"
           name="email"
           value={client.idade}
-          placeholder="Digite sua idade"
+          placeholder="Exemplo@gmail.com"
           onChange={handleChange}
         />
         <span>{errors.email?.message}</span>
@@ -103,11 +124,11 @@ function Form() {
           type="tel"
           name="cel"
           value={client.cel}
-          placeholder="Digite seu numero de celular"
+          placeholder="(99)  9999-999"
           onChange={handleChange}
         />
-        <span>{errors.cel?.message}</span>
         <input type="submit" value="Cadastrar" />
+        <span>{errors.cel?.message}</span>
       </form>
     </>
   );
