@@ -35,11 +35,25 @@ Alguns pontos chave deste projeto incluem:
 
 - Styled Components: Biblioteca para estilização de componentes em React.
 
+- React Bootstrap: Uma biblioteca de componentes Bootstrap para React, facilitando o desenvolvimento responsivo.
+
+- JSON Server: Um servidor JSON local utilizado para fornecer dados para a aplicação.
+
+## Funcionalidades Principais
+- Cadastro de Usuários: Os usuários podem se cadastrar no EcoChoice, fornecendo informações essenciais para o projeto.
+
+- API Local: A aplicação é alimentada por uma API local que armazena os dados dos usuários cadastrados no arquivo clients.json.
+
+- Área de Admin: Uma seção específica para administradores, onde é possível visualizar os dados dos usuários cadastrados.
+
+### Credenciais de Admin:
+Usuário: admin
+Senha: 12345
 
 ## 📂 Deploy do Projeto com Vercel
 Para acessar e visualizar a versão mais recente do projeto EcoChoice, você pode visitar a aplicação hospedada na plataforma Vercel. A Vercel é uma plataforma de deploy que oferece escalabilidade e desempenho para garantir uma ótima experiência ao usuário.
 
-### Para acessar o projeto, https://eco-choice.vercel.app
+### Para acessar o projeto, https://ecochoice.netlify.app
 
 ## 🤝 Integrantes do Grupo
 - Matheus Cavasini - 97722
@@ -51,8 +65,25 @@ Para acessar e visualizar a versão mais recente do projeto EcoChoice, você pod
 ## ⚙️ Executando o Projeto
 Siga os passos abaixo para executar o projeto em sua máquina local:
 
-- Clone este repositório em sua máquina: git clone <url-do-repositorio>
-- Navegue até o diretório do projeto: cd <nome-do-projeto>
+- Clone este repositório em sua máquina: git clone https://github.com/Cavasini/EcoChoice-FrontEnd
+- Navegue até o diretório do projeto: cd EcoChoice-FrontEnd
 - Instale as dependências: npm install ou yarn install
-- Inicie o servidor de desenvolvimento: npm run dev ou yarn dev
-- Agora você pode acessar o aplicativo em http://localhost:3000 e explorar as funcionalidades implementadas.
+
+### Iniciando o Projeto
+Existem duas maneiras de iniciar o projeto, dependendo das suas necessidades.
+
+#### Primeiro método
+
+- Iniciar o Vite (Frontend): npm run dev
+- Acesse http://localhost:5173/ para visualizar a interface do EcoChoice.
+
+- Iniciar o JSON Local Server (Backend):npm run backend
+- Os dados da API estarão disponíveis em http://localhost:5000/clients.
+
+#### Segundo método
+
+- Iniciar Ambos Simultaneamente: npm start
+- Utilizando o Concurrently, este comando iniciará tanto o servidor Vite quanto o JSON Server ao mesmo tempo.
+
+
+- Agora você pode acessar o aplicativo em http://localhost:5173 e explorar as funcionalidades implementadas.
