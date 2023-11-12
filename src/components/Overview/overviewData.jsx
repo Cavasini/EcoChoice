@@ -1,9 +1,9 @@
 import { FiBell } from "react-icons/fi";
 import { BiWorld } from "react-icons/bi";
 import { AiOutlineStar } from "react-icons/ai"
-import frame01 from "../../assets/img/Frame 49.svg";
-import frame02 from "../../assets/img/Frame 50.svg"
-import frame03 from "../../assets/img/Frame S02.svg"
+import frame01 from "../../assets/img/Frame01.jpg";
+import frame02 from "../../assets/img/Frame03.jpg"
+import frame03 from "../../assets/img/Frame02.jpg"
 
 export const overviewData = [
     {
