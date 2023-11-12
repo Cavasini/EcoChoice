@@ -2,8 +2,6 @@ import { Component } from "react";
 import { AiOutlineBulb, AiOutlineCaretUp } from "react-icons/ai";
 import { FaqSection, QuestionsandAnswer, FaqItemDiv } from "./style";
 
-
-
 class FaqAccordion extends Component {
   constructor(props) {
     super(props);

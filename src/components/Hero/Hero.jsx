@@ -1,5 +1,4 @@
-import { useState } from "react";
-import Mockuo from "../../assets/img/mockup.png";
+import hero from "../../assets/img/hero.svg"
 import HeroButtons from "./HeroButtons";
 
 
@@ -21,7 +20,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero_imgDiv col-md-6">
-            <img src={Mockuo} alt="" />
+            <img src={hero} alt="" />
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 // import { ButtonHeader } from "./styles";
 import LogoWhite from "/ecoLogoWhite.svg";
 import LogoGreen from "/ecoLogoGreen.svg";
-import { useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = ({HeaderIds}) => {
@@ -14,6 +14,7 @@ const Header = ({HeaderIds}) => {
     section.scrollIntoView({ behavior: 'smooth',block: 'start' });
     }
   }
+
 
   const styleDeafult = {
     backgroundColor: "transparent",

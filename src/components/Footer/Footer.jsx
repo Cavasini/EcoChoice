@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importe os ícones das redes sociais que deseja usar
 
 const Footer = () => {

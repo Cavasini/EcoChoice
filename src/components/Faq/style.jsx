@@ -66,7 +66,7 @@ export const FaqSection = styled.section`
   padding: 20px 20px;
   align-items: center;
   height: 100%;
-
+  
   div {
     display: flex;
     align-items: center;

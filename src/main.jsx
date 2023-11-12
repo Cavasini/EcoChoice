@@ -4,12 +4,12 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./assets/index.scss"
 import App from "./App.jsx";
 import Home from "./routes/Home";
-// import AdminLogin from "./routes/AdminLogin";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AdminAcess from "./routes/AdminAcess";
 import RegisterPage from "./routes/RegisterPage.jsx";
+import AdminLogin from "./routes/AdminLogin.jsx";
+import AdminAcess from "./routes/AdminAcess.jsx";
 
-
+const Token = sessionStorage.getItem("senhaData");
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,8 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home/>},
       { path:"register", element: <RegisterPage/>},
-      { path:"admin", element: <AdminAcess/>}
+      { path:"admin", element: <AdminLogin/>},
+      { path: `admin/${Token}`, element: <AdminAcess/>}
     ]
   },
 
