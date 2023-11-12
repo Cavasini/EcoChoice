@@ -19,8 +19,8 @@ const Register = () => {
       <div className=" register-right">
         <div className="container">
           <div className="titleRegister">
-            <h2>Create an account</h2>
-            <p>Enter your email below to create your account</p>
+            <h2>Deixa seu contato</h2>
+            <p>Coloque seus dados para entrarmos em contato</p>
           </div>
           <Form />
         </div>
