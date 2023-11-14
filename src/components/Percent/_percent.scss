@@ -37,6 +37,17 @@
 @media (max-width: 768px){
   .percent{
     max-width: 200px;
+    .percent_title{
+      display: flex;
+      flex-direction: column;
+      h2{
+        font-size: 25px;
+        width: 100%;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
     .percent_info{
       display: none;
       // flex-direction: column;
