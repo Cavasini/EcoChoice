@@ -5,6 +5,9 @@ display: flex;
 justify-content: center;
   width: 100%;
   margin: 4%;
+  @media (max-width: 768px){
+    margin: 4% 0%;
+  }
 `;
 const TitleSectionF = styled.div`
   width: 50%;
@@ -13,6 +16,9 @@ const TitleSectionF = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
+  @media (max-width: 768px){
+  width: 100%;
+  }
 `;
 
 const TitleSection_H3 = styled.h3`
@@ -26,9 +32,16 @@ const TitleSection_H2 = styled.h3`
   margin-bottom: 25px;
   line-height: 42px;
   font-weight: 800;
+  @media (max-width: 768px){
+    font-size: 27px
+  }
+
 `;
 const TitleSection_P = styled.p`
   font-size: 15px;
+  @media (max-width: 768px){
+    font-size: 14px
+  }
 `;
 
 const Title = ({ title, caption, text }) => {
