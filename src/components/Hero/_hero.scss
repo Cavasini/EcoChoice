@@ -8,11 +8,7 @@
   padding: 16px;
   align-items: center;
   
-  .heroDiv {
-
-    
-    
-    
+  .heroDiv { 
     display: flex;
     box-sizing: content-box;
     flex-direction: row;
@@ -109,7 +105,6 @@
 @media (max-width: 768px) {
   .hero_section {
     height: 110vh;
-
     .heroDiv {
       .row {
         display: flex;
